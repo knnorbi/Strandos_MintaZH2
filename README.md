@@ -1,0 +1,1 @@
+# Strandos_MintaZH2
