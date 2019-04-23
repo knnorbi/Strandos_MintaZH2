@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{34CB33D3-350D-47FD-A27F-58884661724F}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>Strandos_MintaZH2</RootNamespace>
-    <AssemblyName>Strandos_MintaZH2</AssemblyName>
+    <ProjectGuid>{4ACF97B7-FC37-4034-A799-540F6AB1D777}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Strandos_MintaZH2.UzletiLogika</RootNamespace>
+    <AssemblyName>Strandos_MintaZH2.UzletiLogika</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,17 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Bufe.cs" />
+    <Compile Include="ISzolgaltatas.cs" />
+    <Compile Include="ListaElem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Strandos_MintaZH2.UzletiLogika\Strandos_MintaZH2.UzletiLogika.csproj">
-      <Project>{4acf97b7-fc37-4034-a799-540f6ab1d777}</Project>
-      <Name>Strandos_MintaZH2.UzletiLogika</Name>
-    </ProjectReference>
+    <Compile Include="Strand.cs" />
+    <Compile Include="Strandolo.cs" />
+    <Compile Include="SzolgaltatasLista.cs" />
+    <Compile Include="SzolgaltatasListaBejaro.cs" />
+    <Compile Include="SzolgaltatasListaException.cs" />
+    <Compile Include="ViziSzolgaltatas.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
